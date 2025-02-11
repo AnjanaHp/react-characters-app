@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from 'axios';
+import { Link } from "react-router-dom";
 
 function Homepage () {
 const [characters , setCharacters] =useState(null);
@@ -29,7 +30,9 @@ if(characters === null){
 
              <h3> {characterObj.name} </h3> 
               <p>  {characterObj.occupation}  </p>
-              <button> More details </button>
+              <Link to = {`/characters/${characterObj.id}`}>  <button> More details </button>    </Link>
+             
+              
         </div>
         )
         })}

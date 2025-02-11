@@ -29,6 +29,7 @@ if(characters === null){
 
              <h3> {characterObj.name} </h3> 
               <p>  {characterObj.occupation}  </p>
+              <button> More details </button>
         </div>
         )
         })}
